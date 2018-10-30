@@ -1,16 +1,16 @@
 input,
-img[id="horizontal"],
-div[class="information_for_vertical_view"]
+img[id='horizontal'],
+div[class='information_for_vertical_view']
 {
     display: none;
 }
 
-input:checked ~ label img[id="horizontal"]
+input:checked ~ label img[id='horizontal']
 {
     display: inline;
 }
 
-input:checked ~ label img[id="vertical"]
+input:checked ~ label img[id='vertical']
 {
     display: none;
 }
@@ -22,12 +22,12 @@ input:checked ~ section
     margin-bottom: 5px;
 }
 
-input:checked ~ section div[class="information_for_horizontal_view"]
+input:checked ~ section div[class='information_for_horizontal_view']
 {
     display: none;
 }
 
-input:checked ~ section div[class="information_for_vertical_view"]
+input:checked ~ section div[class='information_for_vertical_view']
 {
     display: block;
 }
