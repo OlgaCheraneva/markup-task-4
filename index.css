@@ -19,7 +19,6 @@ input:checked ~ section
 {
     display: block;
     width: 500px;
-    margin-bottom: 5px;
 }
 
 input:checked ~ section div[class='information_for_horizontal_view']
@@ -32,12 +31,18 @@ input:checked ~ section div[class='information_for_vertical_view']
     display: block;
 }
 
+body
+{
+    font-family: Arial, serif;
+}
+
 section
 {
     width: 250px;
     height: 380px;
     border: 1px solid lightgrey;
     display: inline-block;
+    margin-bottom: 5px;
 }
 
 section:hover
@@ -47,7 +52,6 @@ section:hover
 
 h2
 {
-    font-family: Arial, serif;
     font-size: 22px;
     font-weight: 500;
     padding-left: 15px;
@@ -55,11 +59,20 @@ h2
     text-overflow: ellipsis;
 }
 
+img[alt^='cat_']
+{
+    width: 250px;
+}
+
 p
 {
-    font-family: Arial, serif;
     padding-left: 15px;
     font-size: 14px;
     line-height: .5em;
     color: rgb(87, 86, 86);
+}
+
+footer
+{
+    margin: 10px;
 }
