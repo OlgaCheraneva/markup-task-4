@@ -15,18 +15,19 @@ input:checked ~ label img[id='vertical']
     display: none;
 }
 
-input:checked ~ section
+input:checked ~ dl
 {
     display: block;
+    margin: 5px auto;
     width: 500px;
 }
 
-input:checked ~ section div[class='information_for_horizontal_view']
+input:checked ~ dl div[class='information_for_horizontal_view']
 {
     display: none;
 }
 
-input:checked ~ section div[class='information_for_vertical_view']
+input:checked ~ dl div[class='information_for_vertical_view']
 {
     display: block;
 }
@@ -36,18 +37,23 @@ body
     font-family: Arial, serif;
 }
 
-section
+dl
 {
     width: 250px;
-    height: 380px;
     border: 1px solid lightgrey;
     display: inline-block;
     margin-bottom: 5px;
+    margin-top: 0;
 }
 
-section:hover
+dl:hover
 {
     box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+dd
+{
+    margin: 0;
 }
 
 h2
